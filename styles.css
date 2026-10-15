@@ -1,0 +1,193 @@
+:root {
+  --bg-color: #0b1329;
+  --text-color: #ffffff;
+  --accent-yellow: #facc15;
+  --card-bg: #ffffff;
+  --card-text: #0b1329;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  line-height: 1.5;
+  padding: 2rem;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto 4rem auto;
+  border-bottom: 2px dashed #334155;
+  padding-bottom: 1.5rem;
+}
+
+.logo {
+  font-weight: 900;
+  font-size: 1.8rem;
+  letter-spacing: 2px;
+  color: #fff;
+}
+
+nav a {
+  color: #94a3b8;
+  text-decoration: none;
+  margin-left: 1.5rem;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+nav a:hover {
+  color: #fff;
+}
+
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.hero-section {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 4rem;
+  align-items: center;
+  margin-bottom: 6rem;
+}
+
+.hero-content h1 {
+  font-size: 4rem;
+  font-weight: 900;
+  line-height: 1.1;
+  margin-bottom: 1.5rem;
+  text-transform: uppercase;
+}
+
+.hero-content h1 span {
+  display: block;
+}
+
+.hero-content p {
+  font-size: 1.15rem;
+  color: #cbd5e1;
+  margin-bottom: 2rem;
+  max-width: 500px;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 1rem;
+}
+
+.btn {
+  border: 2px solid #fff;
+  color: #fff;
+  padding: 0.75rem 1.5rem;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 4px;
+  transition: background 0.2s, color 0.2s;
+}
+
+.btn:hover {
+  background: #fff;
+  color: var(--bg-color);
+}
+
+/* Tarjeta tipo encomienda/shipping label */
+.shipping-card {
+  background-color: var(--card-bg);
+  color: var(--card-text);
+  border-radius: 6px;
+  padding: 1.5rem;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+  transform: rotate(1deg);
+}
+
+.card-header {
+  background-color: var(--accent-yellow);
+  padding: 0.75rem 1rem;
+  margin: -1.5rem -1.5rem 1.5rem -1.5rem;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+}
+
+.card-dl div {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #e2e8f0;
+  font-size: 0.95rem;
+}
+
+.card-dl dt {
+  color: #64748b;
+}
+
+.card-dl dd {
+  font-weight: bold;
+  text-align: right;
+}
+
+.barcode {
+  margin-top: 1.5rem;
+  text-align: center;
+  font-family: monospace;
+  letter-spacing: 4px;
+  font-size: 1.5rem;
+  color: #0f172a;
+}
+
+section {
+  margin-bottom: 5rem;
+}
+
+section h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  border-bottom: 1px solid #334155;
+  padding-bottom: 0.5rem;
+}
+
+.experience-list {
+  display: grid;
+  gap: 2rem;
+}
+
+.experience-item {
+  background: #111e38;
+  padding: 1.5rem;
+  border-radius: 6px;
+  border-left: 4px solid var(--accent-yellow);
+}
+
+.experience-item h3 {
+  font-size: 1.3rem;
+  margin-bottom: 0.25rem;
+}
+
+.experience-item .role {
+  color: var(--accent-yellow);
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+}
+
+footer {
+  text-align: center;
+  border-top: 1px solid #334155;
+  padding-top: 2rem;
+  color: #64748b;
+  font-size: 0.9rem;
+}
